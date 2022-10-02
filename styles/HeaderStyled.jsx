@@ -4,7 +4,6 @@ export const NavMenu = styled.nav`
     width: 100%;
     height: 10vh;
     min-height: 65px;
-    background-color: transparent;
     color: black;
     background-color: #222222;
     display: flex;
@@ -13,6 +12,10 @@ export const NavMenu = styled.nav`
     overflow: hidden;
     position: fixed;
     z-index: 999;
+
+    &.shrink {
+        background-color: transparent;
+    }
 
     img {
         margin-left: 50px;
@@ -50,7 +53,7 @@ export const MenuResponsive = styled.div`
     }
 
     @media (max-width: 810px) {
-        display: block; 
+        display: block;
     }
 
     &.active .line-1 {
@@ -92,6 +95,11 @@ export const Ul = styled.ul`
         transform: scaleX(1);
     }
 
+    .Icon-header {
+        cursor: pointer;
+        margin-bottom: 3.5px;
+    }
+
     @media (max-width: 810px) {
         position: fixed;
         top: 10vh;
@@ -116,6 +124,10 @@ export const Ul = styled.ul`
 
         &.active {
             width: 210px;
+        }
+
+        .Icon-header {
+            opacity: 0;
         }
     }
 `
