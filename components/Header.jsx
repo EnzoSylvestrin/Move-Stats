@@ -20,7 +20,7 @@ export default function Header() {
         if (passou) {
             passou = false;
 
-            navbarShrink();
+            //navbarShrink();
 
             var lis = [li1.current, li2.current, li3.current, icon.current];
             var btnMenu = menuResponsive.current;
@@ -38,13 +38,15 @@ export default function Header() {
         const BodyStyle = document.body.style;
 
         if (!dark) {
-            BodyStyle.setProperty('--bgColor', '#2b2828');
+            BodyStyle.setProperty('--bgColor', '#181616');
+            BodyStyle.setProperty('--bgColorLight', "#252121");
             BodyStyle.setProperty('--bgInverse', '#b3adad');
             BodyStyle.setProperty('--textColor', '#fff');
             BodyStyle.setProperty('--placeHolderColor', '#858080');
         }
         else {
-            BodyStyle.setProperty('--bgColor', '#ebdddd');
+            BodyStyle.setProperty('--bgColor', '#f3eaea');
+            BodyStyle.setProperty('--bgColorLight', "#dbdee7");
             BodyStyle.setProperty('--bgInverse', '#2b2828');
             BodyStyle.setProperty('--textColor', '#000');
             BodyStyle.setProperty('--placeHolderColor', '#474247');

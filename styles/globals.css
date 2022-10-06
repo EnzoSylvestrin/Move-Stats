@@ -9,11 +9,13 @@
 }
 
 :root {
-  --bgColor: #2b2828; 
+  --bgColor: #181616; 
+  --bgColorLight: #252121;
   --bgInverse: #b3adad;
   --placeHolderColor: #c9c2c2;
   --textColor: #fff;
   --btnColor: rgba(4, 45, 228, 0.719);
+  --red: #ff0000;
 }
 
 html,

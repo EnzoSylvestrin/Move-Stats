@@ -48,7 +48,7 @@ export const DivImg = styled.div`
     .Blob {
         position: absolute;
         top: 50%;
-        left: 50%;
+        right: 8%;
         background-color: #f51d00;
         width: 480px;
         height: 480px;

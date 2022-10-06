@@ -5,12 +5,13 @@ export const NavMenu = styled.nav`
     height: 10vh;
     min-height: 65px;
     color: black;
-    background-color: #222222;
+    background-color: #0f0e0e;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     position: fixed;
+    border-bottom: 1px solid var(--red);
     z-index: 999;
 
     &.shrink {
@@ -43,7 +44,7 @@ export const MenuResponsive = styled.div`
     div {
         width: 20px;
         height: 2px;
-        background: #ff0000;
+        background: var(--red);
         margin: 5px;
         transition: all 0.2s ease;
     }

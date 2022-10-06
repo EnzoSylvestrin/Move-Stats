@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const CommomTitle = styled.h1`
+    width: 100%;
+    text-align: center;
+    color: #ff0000;
+    font-size: 26px;
+    letter-spacing: 3px;
+`
+
 export const CommomBtn = styled.div`
     position: relative;
     color: #fff;
