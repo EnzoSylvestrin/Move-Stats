@@ -9,24 +9,37 @@ export const HomeWrapper = styled.div`
     min-height: 100vh;
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     color: var(--textColor);
 `
 
 export const DivText = styled.div`
-    width: 40%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     
-    p {
+    h1 {
+        color: #ff0000;
         text-align: center;
         font-size: 25px;
-        color: #a71d1d;
-        font-weight: bold;
+    }
+
+    p {
+        color: var(--textColor);
+        margin: 15px 20px;
+        font-size: 18px;
+    }
+
+    a {
+        margin: 10px auto;
     }
 `
 
 export const DivImg = styled.div`
-    width: 60%;
+    width: 55%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -40,7 +53,7 @@ export const DivImg = styled.div`
         width: 480px;
         height: 480px;
         border-radius: 50%;
-        margin-top: calc(10vh - 240px);
+        margin-top: calc(32.5px - 240px);
         z-index: 0;
     }
 
@@ -49,20 +62,26 @@ export const DivImg = styled.div`
         height: 380px;
         position: relative;
         top: 11%;
-        left: 22%;
+        left: 23%;
     }
 
     @media (max-width: 940px) {
         .Blob {
             width: 400px;
             height: 400px;
-            top: 50%;
-            margin-top: -200px;
+            margin-top: calc(32.5px - 200px);
         }
 
         img {
-            
             height: 300px;
         }
     }
+
+    @media (max-width: 830px) {
+        .Blob {
+            width: 340px;
+            height: 340px;
+            margin-top: calc(32.5px - 150px);
+        }
+    }   
 `

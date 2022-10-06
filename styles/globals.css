@@ -13,6 +13,7 @@
   --bgInverse: #b3adad;
   --placeHolderColor: #c9c2c2;
   --textColor: #fff;
+  --btnColor: rgba(4, 45, 228, 0.719);
 }
 
 html,
@@ -79,7 +80,38 @@ body {
   }
 }
 
+
+@-webkit-keyframes AnimaBorda {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+@keyframes AnimaBorda {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
+/* .btn-primary {
+  padding: 6px;
+  background-color: var(--btnColor);
+  color: var(--textColor);
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+
+} */

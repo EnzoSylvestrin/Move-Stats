@@ -10,7 +10,6 @@ export default function Header() {
     var li1 = useRef(null);
     var li2 = useRef(null);
     var li3 = useRef(null);
-    var li4 = useRef(null);
     var icon = useRef(null);
 
     var passou = true;
@@ -23,7 +22,7 @@ export default function Header() {
 
             navbarShrink();
 
-            var lis = [li1.current, li2.current, li3.current, li4.current, icon.current];
+            var lis = [li1.current, li2.current, li3.current, icon.current];
             var btnMenu = menuResponsive.current;
             var list = ul.current;
 
@@ -89,7 +88,6 @@ export default function Header() {
                     <li ref={li1}><StyledA href="#home">Home</StyledA></li>
                     <li ref={li2}><StyledA href="#services">Sobre</StyledA></li>
                     <li ref={li3}><StyledA href="#contact">Contato</StyledA></li>
-                    <li ref={li4}><StyledA href="#home">Teste</StyledA></li>
                     {
                         dark 
                         ?
