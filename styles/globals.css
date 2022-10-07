@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-padding: 65px;
 }
 
 :root {
@@ -64,7 +65,7 @@ input, textarea {
 }
 
 ::selection {
-  background-color: var(--red);
+  background-color: rgba(238, 11, 11, 0.644);
 }
 
 
@@ -90,38 +91,7 @@ input, textarea {
   }
 }
 
-
-@-webkit-keyframes AnimaBorda {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 300%;
-  }
-}
-@keyframes AnimaBorda {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 300%;
-  }
-}
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
-/* .btn-primary {
-  padding: 6px;
-  background-color: var(--btnColor);
-  color: var(--textColor);
-  font-size: 22px;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
-.btn-primary:hover {
-
-} */

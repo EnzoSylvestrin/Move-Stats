@@ -1,10 +1,11 @@
-import { CommomBtn, CommomTitle } from '../styles/Commom';
+import { CommomBtn, CommomSubtitle, CommomTitle } from '../styles/Commom';
 import { ContainerContact, FormSubmit } from '../styles/ContactStyled';
 
 export default function Contact() {
     return (
         <ContainerContact id="contact">
             <CommomTitle>Contato</CommomTitle>
+            <CommomSubtitle><span>Entre em contato conosco!</span></CommomSubtitle>
             <FormSubmit action="https://formsubmit.co/fecfce57d3e403900dad1688f2d9c317" method="POST">
                 <input type="hidden" name="_next" value="https://enzosylvestrin.github.io/portifolio/" />
                 <input type="hidden" name="_template" value="box" />

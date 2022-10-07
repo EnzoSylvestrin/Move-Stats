@@ -22,7 +22,6 @@ export const ContainerFooter = styled(motion.footer)`
 
         #icon-linkedin,
         #icon-github {
-            cursor: pointer;
             font-size: 35px;
             color: #fff;
         }

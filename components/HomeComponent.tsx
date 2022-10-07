@@ -5,7 +5,7 @@ import celular from '../public/celular.png';
 
 export default function HomeComponent() {
     return (
-        <HomeWrapper>
+        <HomeWrapper id="home">
             <DivText>
                 <CommomTitle>MoveStats</CommomTitle>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, placeat, cum veniam maxime, consectetue.</p>

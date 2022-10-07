@@ -36,7 +36,7 @@ export const FormSubmit = styled(motion.form)`
         margin: 10px auto;
         background-color: var(--bgColor);
         padding: 10px;
-        color: white;
+        color: var(--textColor);
         outline: none;
         border: 1px solid var(--red);
         z-index: 1;

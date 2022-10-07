@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Header from '../components/Header';
 import Contact from '../components/Contact';
 import HomeComponent from '../components/HomeComponent';
-import About from '../components/About';
+import About from '../components/People';
 import Footer from '../components/Footer';
 
 const Home: NextPage = () => {

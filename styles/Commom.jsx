@@ -1,11 +1,36 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const animaBorda = keyframes`
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: 300%;
+    }
+`
 
 export const CommomTitle = styled.h1`
     width: 100%;
     text-align: center;
-    color: #ff0000;
-    font-size: 26px;
+    color: var(--red);
+    font-size: 30px;
     letter-spacing: 1px;
+`
+
+export const CommomSubtitle = styled.div`
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+
+    span {
+        background: linear-gradient(45deg,#0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+        #0099ff, #001aff, #a200ff, #ff0055, #ff0000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background-size: 300%;
+        animation: ${animaBorda} 10s linear infinite;
+    }
 `
 
 export const CommomBtn = styled.div`
@@ -49,7 +74,7 @@ export const CommomBtn = styled.div`
         background: linear-gradient(45deg, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
         #0099ff, #001aff, #a200ff, #ff0055, #ff0000);
         background-size: 300%;
-        animation: AnimaBorda 10s linear alternate infinite; 
+        animation: ${animaBorda} 10s linear alternate infinite; 
         z-index: -1;
     }
 
@@ -65,3 +90,4 @@ export const CommomBtn = styled.div`
         filter: blur(50px);
     }
 `
+

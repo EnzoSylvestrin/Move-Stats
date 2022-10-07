@@ -88,7 +88,7 @@ export default function Header() {
                 </MenuResponsive>
                 <Ul id="nav-list" ref={ul}>
                     <li ref={li1}><StyledA href="#home">Home</StyledA></li>
-                    <li ref={li2}><StyledA href="#services">Sobre</StyledA></li>
+                    <li ref={li2}><StyledA href="#team">Equipe</StyledA></li>
                     <li ref={li3}><StyledA href="#contact">Contato</StyledA></li>
                     {
                         dark 
