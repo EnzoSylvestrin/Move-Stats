@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 const animaBorda = keyframes`
     from {
@@ -7,7 +7,16 @@ const animaBorda = keyframes`
     to {
         background-position: 300%;
     }
-`
+`;
+
+export const CommomContainer = styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0px;
+    flex-wrap: wrap;
+    background: ${props => props.light ? 'var(--bgColorLight)' : 'var(--bgColor)'};
+`;
 
 export const CommomTitle = styled.h1`
     width: 100%;
@@ -15,7 +24,7 @@ export const CommomTitle = styled.h1`
     color: var(--red);
     font-size: 30px;
     letter-spacing: 1px;
-`
+`;
 
 export const CommomSubtitle = styled.div`
     width: 100%;
@@ -31,7 +40,7 @@ export const CommomSubtitle = styled.div`
         background-size: 300%;
         animation: ${animaBorda} 10s linear infinite;
     }
-`
+`;
 
 export const CommomBtn = styled.div`
     position: relative;
@@ -89,5 +98,77 @@ export const CommomBtn = styled.div`
     :hover &:after {
         filter: blur(50px);
     }
-`
+`;
+
+export const CommomItem = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    padding: 12px;
+    text-align: center;
+
+    img {
+        ${props => {
+            switch (props.size) {
+                case "large":
+                    return css`
+                        width: 20rem;
+                        height: 20rem;
+                    `
+                default:
+                    return css`
+                        width: 14rem;
+                        height: 14rem;
+                    `
+            }
+        }};
+      
+        border-radius: 50%;
+        border: 3px solid var(--red);
+    }
+
+    h1 {
+        width: 100%;
+        margin-top: 5px;
+        color: var(--textColor);
+        font-size: 25px;
+    }
+
+    p {
+        width: 100%;
+        color: var(--textColor);
+        font-size: 18px;
+    }
+
+    .icons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        color: var(--textColor);
+
+        div {
+            cursor: pointer;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin: 0 0.5rem;
+            background-color: var(--bgColorLight);
+            transition: scale 0.3s ease;
+        }
+
+        div:hover {
+            scale: 1.1;
+        }
+    }
+`;
 

@@ -1,17 +1,17 @@
-import { ContainerAbout, ContainerItens, ItemPeople } from '../styles/PeopleStyled';
-import { CommomSubtitle, CommomTitle } from '../styles/Commom';
+import { ContainerPeople, ContainerItens } from '../styles/PeopleStyled';
+import { CommomItem, CommomSubtitle, CommomTitle } from '../styles/Commom';
 
 import { FaLinkedinIn, FaFacebookF, FaTwitter } from 'react-icons/fa';
 
 import icon from '../public/img-icon.png'
 
-export default function About() {
+export default function People() {
     return (
-        <ContainerAbout id="team">
+        <ContainerPeople id="team">
             <CommomTitle>Equipe</CommomTitle>
             <CommomSubtitle><span>Conheça nossa equipe!</span></CommomSubtitle>
             <ContainerItens>
-                <ItemPeople>
+                <CommomItem>
                     <img src={icon.src}></img>
                     <h1>Enzo Sylvestrin</h1>
                     <p>Desenvolvedor</p>
@@ -26,8 +26,8 @@ export default function About() {
                             <FaTwitter />
                         </div>            
                     </div>
-                </ItemPeople>
-                <ItemPeople>
+                </CommomItem>
+                <CommomItem>
                     <img src={icon.src}></img>
                     <h1>Enzo Sylvestrin</h1>
                     <p>Desenvolvedor</p>
@@ -42,8 +42,8 @@ export default function About() {
                             <FaTwitter />
                         </div>            
                     </div>
-                </ItemPeople>
-                <ItemPeople>
+                </CommomItem>
+                <CommomItem>
                     <img src={icon.src}></img>
                     <h1>Enzo Sylvestrin</h1>
                     <p>Desenvolvedor</p>
@@ -58,8 +58,8 @@ export default function About() {
                             <FaTwitter />
                         </div>            
                     </div>
-                </ItemPeople>
+                </CommomItem>
             </ContainerItens>
-        </ContainerAbout>
+        </ContainerPeople>
     );
 }

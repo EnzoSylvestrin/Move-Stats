@@ -1,9 +1,9 @@
-import { CommomBtn, CommomSubtitle, CommomTitle } from '../styles/Commom';
-import { ContainerContact, FormSubmit } from '../styles/ContactStyled';
+import { CommomBtn, CommomContainer, CommomSubtitle, CommomTitle } from '../styles/Commom';
+import { FormSubmit } from '../styles/ContactStyled';
 
 export default function Contact() {
     return (
-        <ContainerContact id="contact">
+        <CommomContainer id="contact" light>
             <CommomTitle>Contato</CommomTitle>
             <CommomSubtitle><span>Entre em contato conosco!</span></CommomSubtitle>
             <FormSubmit action="https://formsubmit.co/fecfce57d3e403900dad1688f2d9c317" method="POST">
@@ -20,6 +20,6 @@ export default function Contact() {
                     <input type="submit" value="Enviar" />
                 </CommomBtn>
             </FormSubmit>
-        </ContainerContact>
+        </CommomContainer>
     );
 }

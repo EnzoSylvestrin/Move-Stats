@@ -1,15 +1,6 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion';
 
-export const ContainerContact = styled(motion.section)`
-    padding: 2rem 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bgColorLight);
-    flex-wrap: wrap;
-`
-
 export const FormSubmit = styled(motion.form)`
     width: 40%;
     display: flex;
