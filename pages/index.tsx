@@ -4,6 +4,8 @@ import Head from 'next/head'
 import Header from '../components/Header';
 import Contact from '../components/Contact';
 import HomeComponent from '../components/HomeComponent';
+import About from '../components/About';
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -14,8 +16,9 @@ const Home: NextPage = () => {
 
       <Header />
       <HomeComponent />
+      <About />
       <Contact />
-
+      <Footer />
     </>
   );
 }

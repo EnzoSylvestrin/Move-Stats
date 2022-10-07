@@ -16,6 +16,7 @@ export const FormSubmit = styled(motion.form)`
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
+    justify-content: center;
     margin-top: 10px;
 
     label {
@@ -44,28 +45,7 @@ export const FormSubmit = styled(motion.form)`
     textarea {
         height: 100px;
         resize: none;
-    }
-
-    .form-control:hover,
-    .form-control:focus {
-    }
-
-    input[type="submit"] {
-        display: block;
-        margin: 0 auto;
-        cursor: pointer;
-        border-radius: 10px;
-        margin-top: 10px;
-        padding: 7px;
-        background-color: transparent;
-        font-size: 19px;
-        border: 1px solid var(--red);
-        transition: all 0.3s ease;
-        color: var(--textColor);    
-    }
-
-    input[type="submit"]:hover {
-        background-color: rgba(194, 21, 15, 0.76)
+        margin-bottom: 20px !important;
     }
 
     @media (max-width: 900px) {

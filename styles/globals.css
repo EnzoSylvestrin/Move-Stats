@@ -59,6 +59,14 @@ body {
   color: var(--placeHolderColor);  
 }
 
+input, textarea { 
+  caret-color: var(--red);
+}
+
+::selection {
+  background-color: var(--red);
+}
+
 
 @keyframes navLinkFadeIn {
   from {

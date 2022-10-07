@@ -1,0 +1,59 @@
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+
+export const ContainerFooter = styled(motion.footer)`
+    padding: 5px 0;
+    overflow-y: hidden;
+    width: 100%;
+    min-height: 65px;
+    height: 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #343a40;
+
+    .social {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #icon-linkedin,
+        #icon-github {
+            cursor: pointer;
+            font-size: 35px;
+            color: #fff;
+        }
+
+        #icon-github {
+            margin-left: 12px;
+        }
+
+        #icon-linkedin:hover {
+            color: rgb(35, 98, 192);
+        }
+
+        #icon-github:hover {
+            color: #000;
+        }
+    }
+
+    .copyright {
+        color: #fff;
+        font-size: 17px;
+        transition: all 0.4s ease;
+
+        a {
+            color: #10c9d6;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        :hover {
+            transform: scale(1.1);
+        }
+    }
+
+`

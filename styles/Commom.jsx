@@ -5,7 +5,7 @@ export const CommomTitle = styled.h1`
     text-align: center;
     color: #ff0000;
     font-size: 26px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 `
 
 export const CommomBtn = styled.div`
@@ -21,11 +21,24 @@ export const CommomBtn = styled.div`
     transition: scale 0.3s ease;
     font-size: 20px;
 
+    input[type="submit"] {
+        color: var(--textColor);
+        width: 140px;
+        font-size: 20px;
+        background: var(--bgColor);
+        text-align: center;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        padding: 4px 0;
+    }
+
     span {
         color: var(--textColor);
         width: 140px;
         background: var(--bgColor);
         text-align: center;
+        padding: 4px 0;
     }
 
     :before, :after {

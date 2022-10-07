@@ -1,4 +1,4 @@
-import { CommomTitle } from '../styles/Commom';
+import { CommomBtn, CommomTitle } from '../styles/Commom';
 import { ContainerContact, FormSubmit } from '../styles/ContactStyled';
 
 export default function Contact() {
@@ -15,7 +15,9 @@ export default function Contact() {
                 <input type="email" name="email" className="form-control" placeholder="Email" required/>
                 <label>Mensagem:</label>
                 <textarea name="message" placeholder="Escreva a mensagem" className="form-control" required></textarea>
-                <input type="submit" value="Enviar" />
+                <CommomBtn>
+                    <input type="submit" value="Enviar" />
+                </CommomBtn>
             </FormSubmit>
         </ContainerContact>
     );

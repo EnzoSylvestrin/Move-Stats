@@ -25,7 +25,7 @@ export default function Header() {
             var lis = [li1.current, li2.current, li3.current, icon.current];
             var btnMenu = menuResponsive.current;
             var list = ul.current;
-
+            
             btnMenu.addEventListener('click', () => {
                 list.classList.toggle('active');
                 btnMenu.classList.toggle('active');

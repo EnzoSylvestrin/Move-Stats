@@ -20,12 +20,6 @@ export const DivText = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
-    h1 {
-        color: #ff0000;
-        text-align: center;
-        font-size: 25px;
-    }
 
     p {
         color: var(--textColor);
