@@ -115,8 +115,8 @@ export const CommomItem = styled.div`
             switch (props.size) {
                 case "large":
                     return css`
-                        width: 20rem;
-                        height: 20rem;
+                        width: 16rem;
+                        height: 16rem;
                     `
                 default:
                     return css`
@@ -125,7 +125,7 @@ export const CommomItem = styled.div`
                     `
             }
         }};
-      
+
         border-radius: 50%;
         border: 3px solid var(--red);
     }
@@ -138,9 +138,14 @@ export const CommomItem = styled.div`
     }
 
     p {
+        padding: 0 40px;
         width: 100%;
         color: var(--textColor);
         font-size: 18px;
+    }
+
+    div {
+        margin-top: 20px;
     }
 
     .icons {
@@ -168,6 +173,12 @@ export const CommomItem = styled.div`
 
         div:hover {
             scale: 1.1;
+        }
+    }
+
+    @media (max-width: 800px) {
+        p {
+            padding: 0 10px;
         }
     }
 `;

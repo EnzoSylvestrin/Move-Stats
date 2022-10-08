@@ -78,8 +78,9 @@ export const Ul = styled.ul`
     margin-right: 50px;
 
     li {
-        letter-spacing: 5px;
-        margin: 0 20px;
+        letter-spacing: 3px;
+        font-size: 19px;
+        margin: 0 13px;
         cursor: pointer;
     }
     
@@ -87,7 +88,7 @@ export const Ul = styled.ul`
         display:block;
         content: '';
         border-bottom: solid 2px #00ffea;
-        margin-right: 5px;
+        margin-right: 2px;
         transform: scaleX(0);
         transition: transform 320ms ease-in-out;
     }

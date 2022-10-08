@@ -31,11 +31,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bgInverse);
+  background: var(--bgColor);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--bgColor);
+  background: var(--bgInverse);
   border-radius: 20px;
 }
 

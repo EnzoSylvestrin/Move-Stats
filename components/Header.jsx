@@ -10,6 +10,8 @@ export default function Header() {
     var li1 = useRef(null);
     var li2 = useRef(null);
     var li3 = useRef(null);
+    var li4 = useRef(null);
+    var li5 = useRef(null);
     var icon = useRef(null);
 
     var passou = true;
@@ -22,7 +24,7 @@ export default function Header() {
 
             //navbarShrink();
 
-            var lis = [li1.current, li2.current, li3.current, icon.current];
+            var lis = [li1.current, li2.current, li3.current, li4.current, li5.current, icon.current];
             var btnMenu = menuResponsive.current;
             var list = ul.current;
             
@@ -88,14 +90,16 @@ export default function Header() {
                 </MenuResponsive>
                 <Ul id="nav-list" ref={ul}>
                     <li ref={li1}><StyledA href="#home">Home</StyledA></li>
-                    <li ref={li2}><StyledA href="#team">Equipe</StyledA></li>
-                    <li ref={li3}><StyledA href="#contact">Contato</StyledA></li>
+                    <li ref={li2}><StyledA href="#about">Sobre</StyledA></li>
+                    <li ref={li3}><StyledA href="#fairs">Feiras</StyledA></li>
+                    <li ref={li4}><StyledA href="#team">Equipe</StyledA></li>
+                    <li ref={li5}><StyledA href="#contact">Contato</StyledA></li>
                     {
                         dark 
                         ?
-                        <Sun ref={icon} className='Icon-header' weight="duotone" size={28} color="white" onClick={HandleSwitchTheme}/>
+                        <Sun ref={icon} className='Icon-header' weight="duotone" size={26} color="white" onClick={HandleSwitchTheme}/>
                         :
-                        <Moon ref={icon} className='Icon-header' weight="duotone" size={28} color="white" onClick={HandleSwitchTheme}/>
+                        <Moon ref={icon} className='Icon-header' weight="duotone" size={26} color="white" onClick={HandleSwitchTheme}/>
                     }
                 </Ul>
             </NavMenu>

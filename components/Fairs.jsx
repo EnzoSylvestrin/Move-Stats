@@ -1,8 +1,8 @@
-import { CommomContainer, CommomTitle, CommomSubtitle, CommomItem } from '../styles/Commom';
+import { CommomContainer, CommomTitle, CommomSubtitle, CommomItem, CommomBtn } from '../styles/Commom';
 import { ContainerFairs } from '../styles/FairsStyled';
 
 import Febrace from '../public/febrace.jpg';
-import Femic from '../public/femic.png';
+import Femic from '../public/femic.jpg';
 
 export default function Fairs() {
     return (
@@ -13,12 +13,14 @@ export default function Fairs() {
                 <CommomItem size="large">
                     <img src={Febrace.src} alt="Febrace"></img>
                     <h1>Febrace</h1>
-                    <p></p>
+                    <p>A FEBRACE é a Feira Brasileira de Ciências e Engenharia, um movimento criado para estimular a cultura investigativa, a criatividade, a inovação e o empreendedorismo na Educação Básica brasileira.</p>
+                    <CommomBtn><span>Ver mais</span></CommomBtn>
                 </CommomItem>
                 <CommomItem size="large">
                     <img src={Femic.src} alt="Femic"></img>
                     <h1>Femic</h1>
-                    <p></p>
+                    <p>A FEMIC é um movimento de promoção e divulgação científica que incentiva a criatividade, a inovação e o protagonismo em estudantes e professores, através de ações diversas de ensino, pesquisa e extensão. </p>
+                    <CommomBtn><span>Ver mais</span></CommomBtn>
                 </CommomItem>
             </ContainerFairs>
         </CommomContainer>
