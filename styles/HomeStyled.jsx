@@ -20,6 +20,7 @@ export const DivText = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
 
     p {
         color: var(--textColor);
@@ -27,9 +28,15 @@ export const DivText = styled.div`
         font-size: 18px;
     }
 
-    a {
-        margin: 10px auto;
+    @media (max-width: 720px) {
+        width: 80%;
+
+        p {
+            margin: 15px 0;
+            padding: 0 5px; 
+        }
     }
+
 `
 
 export const DivImg = styled.div`
@@ -42,7 +49,7 @@ export const DivImg = styled.div`
     .Blob {
         position: absolute;
         top: 50%;
-        right: 8%;
+        right: 5%;
         background-color: #f51d00;
         width: 480px;
         height: 480px;
@@ -59,7 +66,7 @@ export const DivImg = styled.div`
         left: 23%;
     }
 
-    @media (max-width: 940px) {
+    @media (max-width: 960px) {
         .Blob {
             width: 400px;
             height: 400px;
@@ -67,15 +74,24 @@ export const DivImg = styled.div`
         }
 
         img {
+            left: 25%;
             height: 300px;
         }
     }
 
     @media (max-width: 830px) {
         .Blob {
-            width: 340px;
-            height: 340px;
-            margin-top: calc(32.5px - 150px);
+            width: 370px;
+            height: 370px;
+            margin-top: calc(32.5px - 185px);
         }
-    }   
+
+        img {
+            height: 280px;
+        }
+    }
+
+    @media (max-width: 720px) {
+        display: none;
+    }
 `

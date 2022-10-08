@@ -10,7 +10,7 @@ export default function HomeComponent() {
                 <CommomTitle>MoveStats</CommomTitle>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, placeat, cum veniam maxime, consectetue.</p>
                 <CommomBtn>
-                    <span>Baixe agora!</span>
+                    <a href="#" rel="noopener noreferrer" target="_blank">Baixe agora!</a>
                 </CommomBtn>
                 </DivText>
                 <DivImg>

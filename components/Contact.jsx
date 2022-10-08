@@ -3,7 +3,7 @@ import { FormSubmit } from '../styles/ContactStyled';
 
 export default function Contact() {
     return (
-        <CommomContainer id="contact" light>
+        <CommomContainer id="contact">
             <CommomTitle>Contato</CommomTitle>
             <CommomSubtitle><span>Entre em contato conosco!</span></CommomSubtitle>
             <FormSubmit action="https://formsubmit.co/fecfce57d3e403900dad1688f2d9c317" method="POST">

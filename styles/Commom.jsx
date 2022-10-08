@@ -67,7 +67,7 @@ export const CommomBtn = styled.div`
         padding: 4px 0;
     }
 
-    span {
+    a {
         color: var(--textColor);
         width: 140px;
         background: var(--bgColor);
@@ -167,13 +167,19 @@ export const CommomItem = styled.div`
             justify-content: center;
             font-size: 22px;
             margin: 0 0.5rem;
-            background-color: var(--bgColorLight);
-            transition: scale 0.3s ease;
+            background-color: var(--bgColor);
+            transition: scale 0.4s ease;
         }
 
         div:hover {
             scale: 1.1;
+            background-color: var(--textColor);
+            color: var(--bgColor) !important;
         }
+    }
+
+    .rotate {
+        transform: rotate(45deg);
     }
 
     @media (max-width: 800px) {

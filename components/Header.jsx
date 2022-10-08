@@ -14,17 +14,23 @@ export default function Header() {
     var li5 = useRef(null);
     var icon = useRef(null);
 
-    var passou = true;
+    var passou = false;
 
     const [dark, setDark] = useState(true);
 
     useEffect(() => {
         if (passou) {
-            passou = false;
+            passou = true;
 
             //navbarShrink();
+            var lis;
 
-            var lis = [li1.current, li2.current, li3.current, li4.current, li5.current, icon.current];
+            if (!dark) {
+                lis = [li1.current, li2.current, li3.current, li4.current, li5.current];
+            }
+            else {
+                lis = [li1.current, li2.current, li3.current, li4.current, li5.current, icon.current];
+            }
             var btnMenu = menuResponsive.current;
             var list = ul.current;
             

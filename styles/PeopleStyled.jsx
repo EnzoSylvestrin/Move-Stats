@@ -7,7 +7,7 @@ export const ContainerPeople = styled(motion.section)`
     justify-content: center;
     padding: 2rem 40px;
     flex-wrap: wrap;
-    background: var(--bgColor);
+    background: var(--bgColorLight);
 
     @media (max-width: 400px) {
         padding: 2rem 10px;
