@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="#">Move Stats</a>
+  <a href="https://movestats.vercel.app">Move Stats</a>
 </h1>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/EnzoSylvestrin/Move-Stats?style=for-the-badge)
@@ -7,7 +7,7 @@
 
 ![Resultado final do projeto](img-app.png)
 
-<h4 align="center"><a href="#">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://movestats.vercel.app">Clique para visitar o projeto</a></h4>
 
 ## 🙃 Funcionalidades extras
 
