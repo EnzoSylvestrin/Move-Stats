@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
 export const HomeWrapper = styled.div`
     background-color: var(--bgColor);
@@ -7,11 +6,17 @@ export const HomeWrapper = styled.div`
     padding: 20px;
     padding-top: 10vh;
     min-height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     color: var(--textColor);
+
+    @media (max-width: 400px) {
+        padding: 5px;
+        padding-top: 10vh;
+    }
 `
 
 export const DivText = styled.div`
@@ -30,6 +35,7 @@ export const DivText = styled.div`
 
     @media (max-width: 720px) {
         width: 80%;
+        margin-top: 25px;
 
         p {
             margin: 15px 0;
@@ -41,8 +47,10 @@ export const DivText = styled.div`
 
 export const DivImg = styled.div`
     width: 55%;
+    height: 300px;
     overflow: hidden;
     display: flex;
+    align-self: flex-start;
     align-items: center;
     justify-content: center;
 
@@ -63,7 +71,7 @@ export const DivImg = styled.div`
         height: 380px;
         position: relative;
         top: 11%;
-        left: 23%;
+        left: 29%;
     }
 
     @media (max-width: 960px) {
@@ -74,7 +82,7 @@ export const DivImg = styled.div`
         }
 
         img {
-            left: 25%;
+            left: 30%;
             height: 300px;
         }
     }
@@ -92,6 +100,23 @@ export const DivImg = styled.div`
     }
 
     @media (max-width: 720px) {
-        display: none;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+        .Blob {
+            width: auto;
+            height: auto;
+            position: sticky;
+            background-color: transparent;
+        }
+
+        img {
+            height: 300px;
+            display: block;
+            margin: 0 auto;
+            position: static;
+        }
+        
     }
 `

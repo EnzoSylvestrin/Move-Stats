@@ -116,6 +116,7 @@ export const Ul = styled.ul`
         z-index: 999;
 
         li {
+            width: 0;
             opacity: 0;
             margin: 0;
         }

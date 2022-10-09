@@ -72,11 +72,13 @@ input, textarea {
 
 @keyframes navLinkFadeIn {
   from {
+    width: auto;
     opacity: 0;
     transform: translateX(50px);
   }
 
   to {
+    width: auto;
     opacity: 1;
     transform: translateX(0px);
   }

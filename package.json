@@ -2,7 +2,10 @@
   "name": "movestats",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yourgithubname.github.io/your-app-name",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -18,6 +21,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
+    "react-toastify": "^9.0.8",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {

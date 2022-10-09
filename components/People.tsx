@@ -103,7 +103,7 @@ export default function People() {
                                 <FaInstagram />
                             </div>
                         </a>
-                        <a href="https://www.instagram.com/_.loopees._/" rel="noopener noreferrer" target="_blank">
+                        <a href="https://github.com/Arajojo" rel="noopener noreferrer" target="_blank">
                             <div>
                                 <FaGithub />
                             </div>
