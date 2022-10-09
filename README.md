@@ -1,10 +1,9 @@
 <h1 align="center">
-  <a href="#">Move-Stats</a>
+  <a href="#">Move Stats</a>
 </h1>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/EnzoSylvestrin/Move-Stats?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/EnzoSylvestrin/Move-Stats?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/EnzoSylvestrin/Move-Stats?style=for-the-badge)
 
 ![Resultado final do projeto](img-app.png)
 
