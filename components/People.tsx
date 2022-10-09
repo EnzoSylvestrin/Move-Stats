@@ -1,13 +1,14 @@
 import { ContainerPeople, ContainerItens } from '../styles/PeopleStyled';
 import { CommomItem, CommomSubtitle, CommomTitle } from '../styles/Commom';
 
-import { FaLinkedinIn, FaFacebookF, FaTwitter, FaGithubAlt, FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
 
 import Enzo from '../public/img-icon.png'
 
 import Renan from '../public/renan.jpg';
 import Araujo from '../public/araujo.jpg';
 import Heitor from '../public/heitor.jpg';
+import Joyce from '../public/joyce.jpg';
 
 export default function People() {
     return (
@@ -128,6 +129,36 @@ export default function People() {
                     </div>
                 </CommomItem>
             </ContainerItens>
+            <CommomTitle
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }} //onScroll
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+                Tutora
+            </CommomTitle>
+            <CommomItem
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }} //onScroll
+                transition={{ duration: 0.4, delay: 0.7 }}
+                viewport={{ once: true }}
+            >
+                <img src={Joyce.src}></img>
+                <h1>Joyce Cristina de Souza</h1>
+                <p>Professora</p>
+                <div className="icons">
+                    <a href="https://www.linkedin.com/in/matheus-araújo-ferreira-606671201/" rel="noopener noreferrer" target="_blank">
+                        <div>
+                            <FaLinkedinIn />
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/joyc.sou/" rel="noopener noreferrer" target="_blank">
+                        <div>
+                            <FaInstagram />
+                        </div>
+                    </a>       
+                </div>
+            </CommomItem>
         </ContainerPeople>
     );
 }
