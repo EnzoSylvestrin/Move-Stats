@@ -120,17 +120,7 @@ export default function People() {
                     <h1>Heitor Freitas</h1>
                     <p>Desenvolvedor</p>
                     <div className="icons">
-                        <a href="#" rel="noopener noreferrer" target="_blank">
-                            <div>
-                                <FaLinkedinIn />
-                            </div>
-                        </a>
-                        <a href="#" rel="noopener noreferrer" target="_blank">
-                            <div>
-                                <FaInstagram />
-                            </div>  
-                        </a>
-                        <a href="#" rel="noopener noreferrer" target="_blank">
+                        <a href="https://github.com/heitorFS" rel="noopener noreferrer" target="_blank">
                             <div>
                                 <FaGithub />
                             </div>
