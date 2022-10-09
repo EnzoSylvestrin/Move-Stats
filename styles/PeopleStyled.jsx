@@ -17,7 +17,11 @@ export const ContainerPeople = styled(motion.section)`
 export const ContainerItens = styled(motion.div)`
     width: 100%;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    @media (max-width: 1050px) {
+        grid-template-columns: 33% 33% 33%;
+    }
 
     @media (max-width: 860px) {
         grid-template-columns: 50% 50%;

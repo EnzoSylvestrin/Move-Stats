@@ -131,6 +131,10 @@ export const Ul = styled.ul`
         .Icon-header {
             opacity: 0;
         }
+
+        .visible {
+            opacity: 1;
+        }
     }
 `
 

@@ -14,33 +14,34 @@ export default function Header() {
     var li5 = useRef(null);
     var icon = useRef(null);
 
-    var passou = false;
-
     const [dark, setDark] = useState(true);
+    const [visible, setVisible] = useState(false);
+
+    var btnMenu;
+    var list;
 
     useEffect(() => {
-        if (passou) {
-            passou = true;
+        btnMenu = menuResponsive.current;
+        btnMenu.addEventListener('click', EventListener);
 
-            //navbarShrink();
-            var lis;
-
-            if (!dark) {
-                lis = [li1.current, li2.current, li3.current, li4.current, li5.current];
-            }
-            else {
-                lis = [li1.current, li2.current, li3.current, li4.current, li5.current, icon.current];
-            }
-            var btnMenu = menuResponsive.current;
-            var list = ul.current;
-            
-            btnMenu.addEventListener('click', () => {
-                list.classList.toggle('active');
-                btnMenu.classList.toggle('active');
-                AnimateLinks(lis);
-            });    
-        }
+        return () => {btnMenu.removeEventListener('click', EventListener)};
     });
+
+    const EventListener = () => {
+        var lis = [li1.current, li2.current, li3.current, li4.current, li5.current, icon.current];
+        list = ul.current;
+
+        if (list.classList.contains('active')) {
+            list.classList.remove('active');
+            btnMenu.classList.remove('active');
+            icon.current.classList.remove('visible');
+        }
+        else {
+            list.classList.add('active');
+            btnMenu.classList.add('active');
+        }
+        AnimateLinks(lis);
+    };
 
     const HandleSwitchTheme = () => {
         const BodyStyle = document.body.style;
@@ -60,29 +61,18 @@ export default function Header() {
             BodyStyle.setProperty('--placeHolderColor', '#474247');
         }
         setDark(dark => !dark);
+        setVisible(true);
     }
 
     const AnimateLinks = (links) => {
         links.forEach((link, index) => {
-            if (link.style.animation && link.style.animation.indexOf('navLinkFadeOut') === -1) {
+            if (!list.classList.contains('active')) {
                 link.style.animation = `navLinkFadeOut 0.5s ease`;
             }
             else {
                 link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index / 7 + 0.3}s`;
             }
         });
-    };
-
-    var navbarShrink = () => {
-        const navbarCollapsible = document.body.querySelector('.main-bar');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('shrink');
-        } else {
-            navbarCollapsible.classList.add('shrink');
-        }
     };
 
     return (
@@ -101,11 +91,11 @@ export default function Header() {
                     <li ref={li4}><StyledA href="#team">Equipe</StyledA></li>
                     <li ref={li5}><StyledA href="#contact">Contato</StyledA></li>
                     {
-                        dark 
+                        dark
                         ?
-                        <Sun ref={icon} className='Icon-header' weight="duotone" size={26} color="white" onClick={HandleSwitchTheme}/>
+                        <Sun ref={icon} className={visible ? 'Icon-header visible' : 'Icon-header'}  weight="duotone" size={26} color="white" onClick={HandleSwitchTheme}/>
                         :
-                        <Moon ref={icon} className='Icon-header' weight="duotone" size={26} color="white" onClick={HandleSwitchTheme}/>
+                        <Moon ref={icon} className={visible ? 'Icon-header visible' : 'Icon-header'} weight="duotone" size={26} color="white" onClick={HandleSwitchTheme}/>
                     }
                 </Ul>
             </NavMenu>

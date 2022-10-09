@@ -1,4 +1,5 @@
 import styled, { css, keyframes } from "styled-components";
+import { motion } from "framer-motion";
 
 const animaBorda = keyframes`
     from {
@@ -9,7 +10,7 @@ const animaBorda = keyframes`
     }
 `;
 
-export const CommomContainer = styled.section`
+export const CommomContainer = styled(motion.section)`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +19,7 @@ export const CommomContainer = styled.section`
     background: ${props => props.light ? 'var(--bgColorLight)' : 'var(--bgColor)'};
 `;
 
-export const CommomTitle = styled.h1`
+export const CommomTitle = styled(motion.h1)`
     width: 100%;
     text-align: center;
     color: var(--red);
@@ -26,7 +27,7 @@ export const CommomTitle = styled.h1`
     letter-spacing: 1px;
 `;
 
-export const CommomSubtitle = styled.div`
+export const CommomSubtitle = styled(motion.div)`
     width: 100%;
     font-size: 18px;
     text-align: center;
@@ -42,7 +43,7 @@ export const CommomSubtitle = styled.div`
     }
 `;
 
-export const CommomBtn = styled.div`
+export const CommomBtn = styled(motion.div)`
     position: relative;
     color: #fff;
     background: red;
@@ -100,7 +101,7 @@ export const CommomBtn = styled.div`
     }
 `;
 
-export const CommomItem = styled.div`
+export const CommomItem = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +167,7 @@ export const CommomItem = styled.div`
             align-items: center;
             justify-content: center;
             font-size: 22px;
-            margin: 0 0.5rem;
+            margin: 0;
             background-color: var(--bgColor);
             transition: scale 0.4s ease;
         }
@@ -176,10 +177,19 @@ export const CommomItem = styled.div`
             background-color: var(--textColor);
             color: var(--bgColor) !important;
         }
+
+        a {
+            border-radius: 50%;
+            margin: 0 0.3rem;
+        }
     }
 
     .rotate {
         transform: rotate(45deg);
+    }
+
+    .rotate2 {
+        transform: rotate(-20deg);
     }
 
     @media (max-width: 800px) {

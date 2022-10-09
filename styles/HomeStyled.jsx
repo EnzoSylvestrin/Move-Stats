@@ -25,7 +25,7 @@ export const DivText = styled.div`
     p {
         color: var(--textColor);
         margin: 15px 20px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     @media (max-width: 720px) {

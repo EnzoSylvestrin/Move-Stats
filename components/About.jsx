@@ -1,15 +1,24 @@
-import { CommomContainer } from '../styles/Commom';
-import { ContainerAbout } from '../styles/AboutStyled';
+import { AboutText, ContainerAbout, WrapperImg } from '../styles/AboutStyled';
 
 import imagem from '../public/deficientevisual.png';
 
 export default function About() {
     return (
-        <ContainerAbout>
-            <div className='wrapper-img'>
+        <ContainerAbout id="about">
+            <WrapperImg
+                initial={{ x: -350, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }} //onScroll
+                transition={{ duration: 0.4 }}
+                viewport={{ once: true }}
+            >
                 <img src={imagem.src} alt="deficiente visual com um celular!"></img>
-            </div>
-            <div className='about-text'>
+            </WrapperImg>
+            <AboutText
+                initial={{ x: 350, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }} //onScroll
+                transition={{ duration: 0.4 }}
+                viewport={{ once: true }}
+            >
                 <h1>O que é o MoveStats?</h1>
                 <p>
                     O projeto MoveStats tem como objetivo principal desenvolver um aplicativo para uma melhor
@@ -19,7 +28,7 @@ export default function About() {
                     O aplicativo procura por locais proximos a coordenada do usuário e reproduz de forma audivel
                     a localização, podendo filtrar pelo tipo de estabecimentos.
                 </p>
-            </div>
+            </AboutText>
         </ContainerAbout>
     ); 
 }

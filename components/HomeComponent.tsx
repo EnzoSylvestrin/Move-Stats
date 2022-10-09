@@ -8,7 +8,11 @@ export default function HomeComponent() {
         <HomeWrapper id="home">
             <DivText>
                 <CommomTitle>MoveStats</CommomTitle>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, placeat, cum veniam maxime, consectetue.</p>
+                <p>
+                    Com o MoveStats sua locomoção se torna, mais segura, rápida e eficiente.
+                    <br />
+                    Disponivel para todos os tipos de celulares.
+                </p>
                 <CommomBtn>
                     <a href="#" rel="noopener noreferrer" target="_blank">Baixe agora!</a>
                 </CommomBtn>
