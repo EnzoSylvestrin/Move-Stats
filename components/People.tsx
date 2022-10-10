@@ -147,7 +147,7 @@ export default function People() {
                 <h1>Joyce Cristina de Souza</h1>
                 <p>Professora</p>
                 <div className="icons">
-                    <a href="https://www.linkedin.com/in/matheus-araújo-ferreira-606671201/" rel="noopener noreferrer" target="_blank">
+                    <a href="https://www.linkedin.com/in/joyce-souza-98aa09179/" rel="noopener noreferrer" target="_blank">
                         <div>
                             <FaLinkedinIn />
                         </div>
