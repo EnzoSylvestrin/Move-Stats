@@ -15,7 +15,7 @@ export default function People() {
         <ContainerPeople id="team">
             <CommomTitle
                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }} //onScroll
+                whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
             >
@@ -23,7 +23,7 @@ export default function People() {
             </CommomTitle>
             <CommomSubtitle
                 initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }} //onScroll
+                whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
             >
@@ -32,7 +32,7 @@ export default function People() {
             <ContainerItens>
                 <CommomItem
                     initial={{ scale: 0, rotate: 60 }}
-                    whileInView={{ rotate: 0, scale: 1 }} //onScroll
+                    whileInView={{ rotate: 0, scale: 1 }}
                     transition={{
                         type: "spring",
                         stiffness: 260,
@@ -59,7 +59,7 @@ export default function People() {
                 </CommomItem>
                 <CommomItem
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }} //onScroll
+                    whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.4, delay: 0.5 }}
                     viewport={{ once: true }}
                 >
@@ -86,7 +86,7 @@ export default function People() {
                 </CommomItem>
                 <CommomItem
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }} //onScroll
+                    whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.4, delay: 0.7 }}
                     viewport={{ once: true }}
                 >
@@ -113,7 +113,7 @@ export default function People() {
                 </CommomItem>
                 <CommomItem
                     initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }} //onScroll
+                    whileInView={{ scale: 1 }}
                     transition={{ duration: 0.4, delay: 0.9 }}
                     viewport={{ once: true }}
                 >
@@ -131,7 +131,7 @@ export default function People() {
             </ContainerItens>
             <CommomTitle
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }} //onScroll
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
@@ -139,7 +139,7 @@ export default function People() {
             </CommomTitle>
             <CommomItem
                 initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }} //onScroll
+                whileInView={{ scale: 1 }}
                 transition={{ duration: 0.4, delay: 0.7 }}
                 viewport={{ once: true }}
             >

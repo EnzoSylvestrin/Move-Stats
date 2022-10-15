@@ -71,7 +71,8 @@ export const DivImg = styled.div`
         height: 380px;
         position: relative;
         top: 11%;
-        left: 29%;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
     @media (max-width: 960px) {
@@ -82,7 +83,6 @@ export const DivImg = styled.div`
         }
 
         img {
-            left: 30%;
             height: 300px;
         }
     }
@@ -116,6 +116,7 @@ export const DivImg = styled.div`
             display: block;
             margin: 0 auto;
             position: static;
+            transform: translate(0, 0);
         }
         
     }
