@@ -28,7 +28,7 @@ export default function Contact() {
                 action="https://formsubmit.co/fecfce57d3e403900dad1688f2d9c317" 
                 method="POST"
             >
-                <input type="hidden" name="_next" value="https://enzosylvestrin.github.io/portifolio/" />
+                <input type="hidden" name="_next" value="https://movestats.vercel.app" />
                 <input type="hidden" name="_template" value="box" />
                 <input type="hidden" name="_autoresponse" value="Recebi sua mensagem, muito obrigado por entrar em contato! Responderei o mais rápido possível..." />            
                 <label>Nome:</label>
