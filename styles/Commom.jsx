@@ -41,6 +41,10 @@ export const CommomSubtitle = styled(motion.div)`
         background-size: 300%;
         animation: ${animaBorda} 10s linear infinite;
     }
+
+    span::selection {
+        background-color: transparent;
+    }
 `;
 
 export const CommomBtn = styled(motion.div)`
@@ -74,6 +78,10 @@ export const CommomBtn = styled(motion.div)`
         background: var(--bgColor);
         text-align: center;
         padding: 4px 0;
+    }
+
+    a::selection {
+        background-color: var(--textColor);
     }
 
     :before, :after {
@@ -129,6 +137,10 @@ export const CommomItem = styled(motion.div)`
 
         border-radius: 50%;
         border: 3px solid var(--red);
+    }
+
+    img::selection {
+        background-color: transparent;
     }
 
     h1 {
