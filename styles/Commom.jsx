@@ -181,7 +181,7 @@ export const CommomItem = styled(motion.div)`
             font-size: 22px;
             margin: 0;
             background-color: var(--bgColor);
-            transition: scale 0.4s ease;
+            transition: all 0.4s ease;
         }
 
         div:hover {
